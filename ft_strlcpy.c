@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 16:25:42 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/07 16:27:04 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/15 16:46:50 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,21 @@ size_t	ft_strlen(const char *s);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	s;
+	size_t	d;
+	size_t	srcsize;
 
-	s = 0;
-	while (dstsize < ft_strlen(dst))
+	d = 0;
+	srcsize = 0;
+	while (src[srcsize] != '\0')
+		srcsize++;
+	if (dstsize > 0)
 	{
-		dst[s] = src[s];
-		s++;
-	}
-	while (s < dstsize)
-	{
-		dst[s] = '\0';
-			s++;
-	}
-	return (ft_strlen(src));
+		while (src[d] != '\0' && d < (dstsize -1))
+		{
+			dst[d] = src[d];
+			d++;
+		}
+		dst[d] = '\0';
+	}	
+	return (srcsize);
 }
