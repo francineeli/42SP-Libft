@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 18:19:08 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/15 15:52:06 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/16 09:12:30 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,26 +16,26 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 	size_t	len;
-	int		size;
-	int		inc;
-	int		total;
+	size_t	i;
 
-	size = 0;
-	inc = 0;
-	total = 0;
+	if (!s1 || !s2)
+		return (NULL);
+	i = 0;
 	len = ft_strlen(s1) + ft_strlen(s2);
-	str = (char *) malloc(len + 1);
-	if (s1[size] == '\0' && s2[inc] == '\0')
-		return (0x0);
-	if (!str)
-		return (0x0);
-	if (str)
+	str = (char *) malloc((len + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	while (i < ft_strlen(s1))
 	{
-		while (s1[size] != '\0')
-			str[total++] = s1[size++];
-		while (s2[inc] != '\0')
-			str[total++] = s2[inc++];
+		str[i] = s1[i];
+		i++;
+	}
+	i = 0;
+	while (i < ft_strlen(s2))
+	{
+		str[ft_strlen(s1) + i] = s2[i];
+		i++;
 	}	
-	str[total + 1] = '\0';
+	str[len] = '\0';
 	return (str);
 }

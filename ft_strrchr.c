@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:07:52 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/15 16:18:45 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/16 13:18:06 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
-	i = (int)ft_strlen(s);
+	i = (int) ft_strlen(s);
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == (char) c)
 			return (&(((char *)s)[i]));
 		i--;
 	}
-	return (0x0);
+	return (NULL);
 }
