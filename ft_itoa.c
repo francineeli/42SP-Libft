@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 16:18:28 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/16 18:33:04 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/16 18:37:43 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,84 +69,4 @@ char    *ft_itoa(int n)
     else
         convert(num, n, size);
     return (num);
-}
-
-void	ft_print_result(char const *s)
-{
-	int		len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	write(1, s, len);
-}
-
-int		main(int argc, const char *argv[])
-{
-	int		arg;
-
-	alarm(5);
-	if (argc == 1)
-		return (0);
-	else if ((arg = atoi(argv[1])) == 1)
-	{
-		char *res = ft_itoa(0);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 2)
-	{
-		char *res = ft_itoa(9);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 3)
-	{
-		char *res = ft_itoa(-9);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 4)
-	{
-		char *res = ft_itoa(10);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 5)
-	{
-		char *res = ft_itoa(-10);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 6)
-	{
-		char *res = ft_itoa(8124);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 7)
-	{
-		char *res = ft_itoa(-9874);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 8)
-	{
-		char *res = ft_itoa(543000);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 9)
-	{
-		char *res = ft_itoa(-2147483648LL);
-		ft_print_result(res);
-		free(res);
-	}
-	else if (arg == 10)
-	{
-		char *res = ft_itoa(2147483647);
-		ft_print_result(res);
-		free(res);
-	}
-	return (0);
 }
