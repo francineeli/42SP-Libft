@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 18:41:36 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/14 18:49:46 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/16 16:17:06 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,41 +14,36 @@
 
 size_t	ft_strlen(const char *s);
 
-static	size_t	set_chr(char c, char const *ch)
+static	size_t	get_chr(char c, char const *str)
 {
-	while (*ch)
+	while (*str)
 	{
-		if (*ch == c)
+		if (*str == c)
 			return (1);
-		ch++;
+		str++;
 	}
 	return (0);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		start;
-	int		len;
-	int		i;
+	size_t	start;
+	size_t	end;
+	size_t	len;
 	char	*result;
 
 	start = 0;
-	i = 0;
-	len = ft_strlen(s1);
+	end = 0;
+	len = ft_strlen(&s1[start]);
 	result = (char *) malloc(len + 1);
-	if (!s1[start] && !set && !result)
+	if (s1 == NULL || set == NULL || !result)
 		return (NULL);
-	while (s1[start] && set_chr(s1[start], set))
+	while ((s1[start] && get_chr(s1[start], set) != '\0'))
 		start++;
-	if (len != '\0')
-	{
-		while (len >= start && set_chr(s1[len - 2], set))
+	while ((s1[end] && get_chr(s1[len - 1], set) != '\0'))
 		len--;
-	}
 	while (start < len)
-	{
-		result[i++] = s1[start++];
-	}
+			result[end++] = s1[start++];
 	result[start] = 0;
 	return (result);
 }
