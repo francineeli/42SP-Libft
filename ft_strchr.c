@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:06:51 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/15 16:20:20 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/16 13:19:37 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if (s[i] == (char) c)
 			return ((void *) s + i);
 			i++;
 	}

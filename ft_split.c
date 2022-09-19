@@ -6,14 +6,16 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 18:07:04 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/19 18:40:09 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/19 18:34:40 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-
 size_t	ft_strlen(const char *s);
 
 static int	ft_counter(const char *s, char c)

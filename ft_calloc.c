@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 20:05:53 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/15 16:38:16 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/16 12:37:07 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t	ovflow;
 
 	ovflow = nmemb * size;
-	result = (void *) malloc(nmemb * size);;
-	if ((nmemb / ovflow != size) || (size / ovflow != nmemb))
-		return (0x0);
-	if (result == NULL || nmemb == NULL || size == NULL)
-		return (0x0);
-	else
-		ft_bzero (result, nmemb * size);
-		return (result);
+	result = (void *) malloc (nmemb * size);
+	if (ovflow / nmemb != size || ovflow / size != nmemb || (!result))
+		return (NULL);
+	ft_bzero (result, ovflow);
+	return (result);
 }
