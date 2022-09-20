@@ -3,22 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feli-bar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:02:24 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/19 17:03:26 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/20 08:43:17 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-
 
 static int	ft_counter(const char *s, char c)
 {
 	int		count;
 	size_t	i;
 
+	i = 0;
 	count = 0;
 	while (s[i])
 	{

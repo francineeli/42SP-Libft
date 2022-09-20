@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: feli-bar@student.42sp.org.br>	            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/07 13:47:56 by feli-bar          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2022/09/19 15:53:32 by feli-bar         ###   ########.fr       */
-=======
-/*   Updated: 2022/09/19 18:44:54 by feli-bar         ###   ########.fr       */
->>>>>>> b6528d033dca1d158edbdb964e185f70d4e0a370
+/*   Created: 2022/09/20 08:37:51 by feli-bar          #+#    #+#             */
+/*   Updated: 2022/09/20 08:40:52 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +51,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
 char	*ft_strtrim(char const *s1, char const *set);
-<<<<<<< HEAD
 char	**ft_split(char const *str, char c);
-=======
-char 	**ft_split(char const *str, char c);
->>>>>>> b6528d033dca1d158edbdb964e185f70d4e0a370
+char	**ft_split(char const *str, char c);
 
 #endif 
