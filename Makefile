@@ -20,6 +20,12 @@ OBJS = 		ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o
 			ft_strlen.o ft_strmapi.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_strtrim.o\
 			ft_substr.o ft_tolower.o ft_toupper.o ft_itoa.o ft_strtrim.o ft_split.o
 
+BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
+		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+BOBJS = ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o\
+		ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o
+
 RM = rm -f
 
 all: $(NAME)
@@ -30,11 +36,14 @@ $(NAME): $(OBJS)
 $(OBJ): $(FUNCTIONS)
 	$(CC) $(FLAGS) -I $(INCLUDE) -c $(FUNCTIONS)
 
+$(BONUS): $(BOBJS)
+	ar rc $(BONUS) $(BOBJS)
+
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BOBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) $(BONUS)
 
 re: fclean all
 
