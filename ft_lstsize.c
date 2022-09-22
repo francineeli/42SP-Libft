@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 13:43:56 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/22 13:52:49 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/22 15:25:49 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	while (lst != NULL)
@@ -22,5 +22,5 @@ int	ft_lstsize(t_list *lst)
 		count++;
 		lst = lst->next;
 	}
-	return (count);	
+	return (count);
 }

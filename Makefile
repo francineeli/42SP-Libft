@@ -43,7 +43,7 @@ clean:
 	$(RM) $(OBJS) $(BOBJS)
 
 fclean: clean
-	$(RM) $(NAME) $(BONUS)
+	$(RM) $(NAME)
 
 re: fclean all
 

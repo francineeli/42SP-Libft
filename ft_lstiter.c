@@ -6,15 +6,17 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 15:09:54 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/22 15:41:46 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/22 15:26:19 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void(*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (lst)
-		(*f)(lst->content)
-		lst = lst->new;
+	while (lst)
+	{
+		(*f)(lst->content);
+		lst = lst->next;
+	}
 }
