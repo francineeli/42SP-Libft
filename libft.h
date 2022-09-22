@@ -6,7 +6,7 @@
 /*   By: feli-bar@student.42sp.org.br>	            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 08:37:51 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/20 16:44:05 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/22 08:25:13 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typed struct		s_list
+typedef struct		s_list
 {
 	void			*content;
 	struct s_list	*next;
