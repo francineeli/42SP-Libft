@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 15:15:27 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/24 13:03:56 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/24 15:20:10 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *newlist;
-	t_list *newnode;
-	
+	t_list	*newlist;
+	t_list	*newnode;
+
 	newlist = NULL;
 	while (lst)
 	{

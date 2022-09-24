@@ -21,10 +21,10 @@ OBJS = 		ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o
 			ft_substr.o ft_tolower.o ft_toupper.o ft_itoa.o ft_strtrim.o ft_split.o
 
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
-		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+		ft_lstdelone.c ft_lstclear.c ft_lstmap.c ft_lstiter.c
 
 BOBJS = ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o\
-		ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o
+		ft_lstdelone.o ft_lstclear.o ft_lstmap.o ft_lstiter.o
 
 RM = rm -f
 
@@ -44,7 +44,7 @@ fclean: clean
 
 re: fclean all
 
-bonus: $(BONUS) $(BOBJS)
+bonus: $(OBJS) $(BOBJS)
 	ar rc $(NAME) $(OBJS) $(BOBJS)
 
 .PHONY: all clean fclean re
