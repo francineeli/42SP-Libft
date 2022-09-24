@@ -36,9 +36,6 @@ $(NAME): $(OBJS)
 $(OBJ): $(FUNCTIONS)
 	$(CC) $(FLAGS) -I $(INCLUDE) -c $(FUNCTIONS)
 
-$(BONUS): $(BOBJS)
-	ar rc $(BONUS) $(BOBJS)
-
 clean:
 	$(RM) $(OBJS) $(BOBJS)
 
@@ -47,3 +44,7 @@ fclean: clean
 
 re: fclean all
 
+bonus: $(BONUS) $(BOBJS)
+	ar rc $(NAME) $(OBJS) $(BOBJS)
+
+.PHONY: all clean fclean re

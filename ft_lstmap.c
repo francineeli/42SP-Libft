@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 15:15:27 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/22 15:34:41 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/24 13:03:56 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,19 @@
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list *newlist;
+	t_list *newnode;
 	
-	newlist = (t_list *)malloc(sizeof(t_list *));
-	if (newlist == NULL)
-		return (NULL);
-	if(!*del) || (!*f)
-	   return (NULL);	
-	while (*lst != NULL)
+	newlist = NULL;
+	while (lst)
 	{
-		newlist = *(ft_lstiter(*lst,;
-		free(lst)
+		newnode = ft_lstnew(f(lst->content));
+		if (!newnode)
+		{
+			ft_lstclear(&newlist, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&newlist, newnode);
+		lst = lst->next;
 	}
-	*lst == NULL;	
-}
+	return (newlist);
 }
