@@ -6,11 +6,9 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 14:29:08 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/20 08:40:25 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/26 09:01:59 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_toupper(int c)
 {

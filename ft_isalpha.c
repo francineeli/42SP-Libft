@@ -6,11 +6,9 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 14:56:02 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/20 09:31:06 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/26 08:25:55 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {

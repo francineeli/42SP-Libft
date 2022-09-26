@@ -6,11 +6,9 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 21:05:43 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/13 21:08:57 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/26 08:59:25 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

@@ -6,11 +6,9 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 14:15:41 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/07 14:16:49 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/26 08:26:39 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

@@ -6,11 +6,9 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 14:08:38 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/07 14:09:58 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/26 08:26:16 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isascii(int c)
 {

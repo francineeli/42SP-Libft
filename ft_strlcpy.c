@@ -6,13 +6,11 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 16:25:42 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/15 16:46:50 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/26 09:00:03 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *s);
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

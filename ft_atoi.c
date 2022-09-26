@@ -6,11 +6,9 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 14:37:36 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/07 14:39:21 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/26 08:50:55 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

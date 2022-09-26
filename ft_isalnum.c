@@ -6,11 +6,9 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 14:49:28 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/09/07 14:50:56 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/09/26 08:24:30 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalnum(int c)
 {
